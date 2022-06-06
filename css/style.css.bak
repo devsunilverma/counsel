@@ -24,13 +24,14 @@ header .container,section .container,footer .container{max-width:1170px;}
 
 
 /*section-1*/
-.sec-1text{padding-top:6.188rem;}
+.sec-1text{padding:5.125rem 0;}
 .sec-1text h2{font:1.938rem/1.938rem 'Montserrat', sans-serif;font-weight:700;color:#002E5B;}
 .sec-1text h4{font:1.313rem/1.563rem  'Noto Sans', sans-serif;color:#666666;padding-top:1.75rem;}
 .sec-1text p{font:1rem/1.563rem 'Noto Sans', sans-serif;color:#333333;padding-top:1.5rem;}
 .sec-1text h5{font:1rem/1.563rem 'Montserrat', sans-serif;font-weight:700;color:#002E5B;padding-top:2.1rem;}
-.yellow-rectangle{background:#FDE327;}
-.gray-rect{background:#A0A0A0;top:6.25rem;right:0;}
+.gray-rect{background:#A0A0A0;position:relative;z-index:2;}
+.gray-rect:before{content:"";width:60%;height:524px;background:#FDE327;position:absolute;z-index:1;top:-100px;left:96px;}
+
 /*section-2*/
 .section-2{background:#F4F4F4;padding-top:6.313rem;padding-bottom:6.125rem;}
 .sec-2text h2{font:1.938rem/1.938rem 'Montserrat', sans-serif;font-weight:700;color:#002E5B;}
@@ -89,21 +90,40 @@ footer h5 span{color:#FFD400;}
 	/*header*/
 	header .container,section .container,footer .container{max-width:905px;}
 	/*section-1*/
-	
+	.sec-1text{padding:3.563rem 0;}
 	.sec-1text h2{font:1.5rem/1.938rem 'Montserrat', sans-serif;}
 	.sec-1text h4 {font: 1.1rem/1.563rem 'Noto Sans', sans-serif;}
+	.gray-rect{height:290px;}
+	.gray-rect:before{left:65px;}
+	/*section-2*/
+	.section-2{padding-bottom: 2.125rem;}
+	.sec-2text h2{font:1.5rem/1.938rem 'Montserrat', sans-serif;}
+	.sec-2text h4{padding-top:0.75rem}
+	/*section-3*/
+	.contact-text p{font: 1rem/3.188rem 'Montserrat', sans-serif;}
+	.box-1text h3, .box-2text h3, .box-3text h3 {font: 1.1rem/3rem 'Montserrat', sans-serif;}
 	
+	/*section-4*/
+	.section-4 {padding:4.875rem 0;}
+	.sec-5text {padding-top: 4.188rem;}
+	..sec-5text h2 {font: 1.8rem/1.938rem 'Montserrat', sans-serif;}
+	.sec-5text h4{padding-top:0.75rem;}
+	.blue-rect{height:249px;top:7.25rem;}
 	
-    
-	
-	
+	/*section-6*/
+	.section-6 {padding-top:3.813rem;padding-bottom:3.125rem;}
+	.sec-6text p{font:1.1rem/2.375rem 'Myriad', sans-serif;}
 
-
+@media only screen and (max-width:991.98px) {
+	/*header*/
+	header{height:auto;}
+	header .container,section .container,footer .container{max-width:700px;}
+	.navbar-brand{font:2.2rem/0.2rem 'Montserrat', sans-serif;}
+	.navbar-brand span{font: 0.5rem/3.188rem 'Montserrat', sans-serif;}
+	.navbar-nav li:last-of-type{display:none;}
+	.slideerimg{padding-top:6.613rem;}
+	.card-title{font:2.188rem/3.188rem 'Montserrat', sans-serif;}
 }
-
-
-
-@media only screen and (max-width:991.98px) {}
 @media only screen and (max-width: 767.98px) {}
 @media only screen and (max-width: 575.98px) {
 
@@ -112,7 +132,3 @@ footer h5 span{color:#FFD400;}
 
 
 }
-/*
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<script src="js/bootstrap.bundle.min.js"></script>
-*/
